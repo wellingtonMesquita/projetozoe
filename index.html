@@ -1,993 +1,176 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
-<!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Projeto Zoe</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-    <!--Google Fonts link-->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="assets/css/iconfont.css">
-    <link rel="stylesheet" href="assets/css/slick/slick.css">
-    <link rel="stylesheet" href="assets/css/slick/slick-theme.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
-
-
-    <!--For Plugins external css-->
-    <link rel="stylesheet" href="assets/css/plugins.css" />
-
-    <!--Theme custom css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!--Theme Responsive css-->
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-
-    <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projeto Zoe </title>
+  <meta name="description" content="">
+  <link rel="canonical" href="https://www.nameagency.com">
+  <meta property="og:url" content="https://www.nameagency.com">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="ico/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72.png">
+  <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57.png">
 </head>
 
-<body data-spy="scroll" data-target=".navbar-collapse">
-
-    <div class='preloader'>
-        <div class='loaded'>&nbsp;</div>
+<body>
+  <!-- Navbar Menu  ---->
+  <section id="nav-bar" style="background-image: url(ground.png);">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+        <img src="images/webiz-logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#top">História <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Apoie-se</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <!--- Banner Hero section ------->
+  <!-- <section class="banner">
+    <div class="container">
     </div>
-    <div class="culmn">
-        <header id="main_menu" class="header navbar-fixed-top">
-            <div class="main_menu_bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="nave_menu">
-                            <nav class="navbar navbar-default">
-                                <div class="container-fluid">
-                                    <!-- Brand and toggle get grouped for better mobile display -->
-                                    <div class="navbar-header">
-                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                            <span class="sr-only">Toggle navigation</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-                                        <a class="navbar-brand" href="#home">
-                                            <!-- <img src="assets/images/logo.jpg"/> -->
-                                        </a>
-                                    </div>
-
-                                    <!-- Collect the nav links, forms, and other content for toggling -->
-
-
-
-                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-                                        <ul class="nav navbar-nav navbar-right">
-                                            <li><a href="#home">Casa</a></li>
-                                            <li><a href="#history">Sobre Nós</a></li>
-                                            <li><a href="#service">Como Contribuir</a></li>
-                                            <li><a href="#contact">Contato</a></li>
-                                        </ul>
-
-
-                                    </div>
-
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </header>
-        <!--End of header -->
-
-
-
-
-        <!--home Section -->
-        <section id="home" class="home">
-            <div class="overlay">
-                <div class="home_skew_border">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 ">
-                                <div class="main_home_slider text-center">
-                                    <div class="single_home_slider">
-                                        <div class="main_home wow fadeInUp" data-wow-duration="700ms">
-                                            <h3>Em amor por vidas</h3>
-                                            <h1>Bem vindo ao projeto zoe</h1>
-                                            <div class="separator"></div>
-                                            <p style="font-size: large;">Nosso objetivo e levar amor, alegria e
-                                                esperança de dias
-                                                melhores a todos aqueles que estão em situação de vulnerabilidade social
-                                                em nossa comunidade.</p>
-
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- <div class="single_home_slider">
-                                        <div class="main_home wow fadeInUp" data-wow-duration="700ms">
-                                            <h3>Our Clients Are Our First Priority</h3>
-                                            <h1>WELCOME TO BINO</h1>
-                                            <div class="separator"></div>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry's
-                                                standard dummy text ever since the 1500s, when an unknown printer took a
-                                                galley
-                                                of type and scrambled it to make a type specimen book.</p>
-                                            <div class="home_btn">
-                                                <a href="https://bootstrapthemes.co" class="btn btn-lg m_t_10">GET
-                                                    STARTED NOW</a>
-                                                <a href="https://bootstrapthemes.co" class="btn btn-default">LEARN
-                                                    MORE</a>
-                                            </div>
-
-                                        </div>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="scrooldown">
-                        <a href="#feature"><i class="fa fa-arrow-down"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--End of home section -->
-
-
-        <!--feature section -->
-
-        <!--End of feature Section -->
-        <hr />
-
-
-        <!-- History section -->
-        <section id="history" class="history sections">
-            <div class="container">
-                <div class="row">
-                    <div class="main_history">
-                        <div class="col-sm-6">
-                            <div class="single_history_img">
-                                <img src="assets/images/solidariedade.jpg" alt="" />
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <div class="single_history_content">
-                                <div class="head_title">
-                                    <h2>Nossa Historia</h2>
-                                </div>
-                                <p style="font-size: large;">Cremos em um propósito que nos uniu, e todos os dias a
-                                    bondade de Deus nos alcança e seu amor é derramado sobre nós.
-                                    E em resposta a este amor nasce então o Projeto Zoe.
-
-                                    Há muito a ser feito e a paz vem na certeza de que não é por nós mas agradecemos
-                                    pela graça de ser através de nós.
-
-                                    Precisamos do apoio incondicional do Senhor, para que nada aconteça fora da Sua
-                                    vontade, e também precisamos de pessoas dispostas a nos ajudar nesse novo caminhar!
-
-                                    Seja um ajudador, ajude-nos em oração e com ofertas de amor. </p>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End of row -->
-            </div>
-            <!--End of container -->
-        </section>
-        <!--End of history -->
-
-
-        <!-- service Section -->
-        <section id="service" class="service">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="main_service">
-                        <div class="col-md-6 col-sm-12 no-padding">
-
-                            <div class="single_service single_service_text text-right">
-                                <div class="head_title">
-                                    <h2>Como Contribuir</h2>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-12 col-sm-10 col-xs-10 margin-bottom-60">
-                                        <div class="row">
-
-                                            <div class="col-sm-10 col-sm-offset-1 col-xs-9 col-xs-offset-1">
-                                                <article class="single_service_right_text">
-                                                    <h4>compartilhando este site</h4>
-                                                    <p style="font-size: medium;">Ao compartilhar esse site com amigos,
-                                                        parentes ou conhecidos voce
-                                                        estará contribuindo para que mais pessoas conheçam esse lindo
-                                                        projeto, e possam contribuir na vida de quem necessita.
-                                                    </p>
-                                                </article>
-                                            </div>
-                                            <div class="col-sm-1 col-xs-1">
-                                                <figure class="single_service_icon">
-                                                    <i class="fa fa-heart"></i>
-                                                </figure><!-- End of figure -->
-                                            </div>
-                                        </div>
-                                    </div><!-- End of col-sm-12 -->
-
-                                    <div class="col-md-12 col-sm-10 col-xs-10 margin-bottom-60">
-                                        <div class="row">
-
-                                            <div class="col-sm-10 col-sm-offset-1 col-xs-9 col-xs-offset-1">
-                                                <article class="single_service_right_text">
-                                                    <h4>Doando cestas básicas</h4>
-                                                    <p style="font-size: medium;">Alimentos não perecíveis , itens de
-                                                        higiene ou como sentir em seu
-                                                        coração.
-                                                    </p>
-                                                </article>
-                                            </div>
-                                            <div class="col-sm-1 col-xs-1">
-                                                <figure class="single_service_icon">
-                                                    <i class="fa fa-heart"></i>
-                                                </figure><!-- End of figure -->
-                                            </div>
-                                        </div>
-                                    </div><!-- End of col-sm-12 -->
-
-                                    <div class="col-md-12 col-sm-10 col-xs-10 margin-bottom-60">
-                                        <div class="row">
-
-                                            <div
-                                                class="col-sm-10 col-sm-offset-1 col-xs-9 col-xs-offset-1 margin-bottom-20">
-                                                <article class="single_service_right_text">
-                                                    <h4>Por meio de doações em dinheiro</h4>
-                                                    <p style="font-size: medium;">Ao acessar nosso link de doações, voce
-                                                        podera doar qualquer
-                                                        quantia, para que nos possamos estar adiquirindo cestas basicas.
-                                                    </p>
-                                                </article>
-                                            </div>
-                                            <div class="col-sm-1 col-xs-1">
-                                                <figure class="single_service_icon">
-                                                    <i class="fa fa-heart"></i>
-                                                </figure><!-- End of figure -->
-                                            </div>
-                                        </div>
-                                    </div><!-- End of col-sm-12 -->
-
-                                </div>
-                            </div>
-                        </div><!-- End of col-sm-6 -->
-
-                        <div class="col-md-6 col-sm-12 no-padding">
-                            <figure class="single_service single_service_img">
-                                <div class="overlay-img"></div>
-                                <img src="assets/images/doacao.jpg" alt="" />
-                            </figure><!-- End of figure -->
-                        </div><!-- End of col-sm-6 -->
-
-                    </div>
-                </div><!-- End of row -->
-            </div><!-- End of Container-fluid -->
-        </section><!-- End of service Section -->
-
-
-        <section id="portfolio" class="portfolio sections">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="main_portfolio">
-                        <div class="col-sm-12">
-                            <div class="head_title text-center">
-                                <h2>Ultimas doações</h2>
-                                <div class="subtitle">
-                                    Essa são algumas imagem de pessoas nas quais conseguimos ajudar com cestas basicas.
-                                </div>
-                                <div class="separator"></div>
-                            </div>
-                        </div>
-
-                        <div style="clear:both;"></div>
-                        <div style="margin-left: 20%;" id="portfoliowork">
-                            <div class="single_portfolio tile scale-anm web grid-item-width2 video">
-                                <img src="assets/images/pessoa6.jpg" alt="" />
-                               
-                            </div>
-                            <div class="single_portfolio tile scale-anm bcards photo">
-                                <img src="assets/images/pessoa1.jpeg" alt="" />
-                                   
-                              
-                            </div>
-                            <div class="single_portfolio tile scale-anm web video">
-                                <img src="assets/images/pessoa2.jpg" alt="" />
-                                    
-                               
-                            </div>
-                            <div class="single_portfolio tile scale-anm web photo">
-                                <img src="assets/images/pessoa3.jpeg" alt="" />
-                                    
-                                
-                            </div>
-                            <div class="single_portfolio tile scale-anm bcards design">
-                                <img src="assets/images/pessoa4.jpg" alt="" />
-                                   
-                               
-                            </div>
-
-                            <div class="single_portfolio tile scale-anm flyers video design">
-                                <img src="assets/images/pessoa5.jpg" alt="" />
-                            
-                                   
-                            </div>
-                            <div class="single_portfolio tile scale-anm photo flyers">
-                                <img src="assets/images/pessoa8.jpg" alt="" />
-                                   
-                            </div>
-
-                            <div class="single_portfolio tile scale-anm bcards video">
-                                <img src="assets/images/pessoa7.jpg" alt="" />
-                                   
-                            </div>
-
-                        </div>
-
-                        <div style="clear:both;"></div>
-                    </div>
-                </div>
-            </div><!-- End off container -->
-        </section> <!-- End off Work Section -->
-
-
-
-       <!-- Study Section
-         <section id="study" class="study text-center wow fadeIn" data-wow-duration="2s" data-wow-dealy="1.5s">
-            <div class="container">
-                <div class="row">
-                    <div class="main_study_area sections">
-                        <div class="head_title text-center">
-                            <h2>CASE STUDY</h2>
-                            <div class="subtitle">
-                                A brief story about how this process works, keep an eye till the end.
-                            </div>
-                            <div class="separator"></div>
-                        </div>
-                        <div class="single_study_content">
-                            <div class="col-sm-6">
-                                <div class="single_study_slid_area">
-
-                                    <div class="single_study_text">
-                                        <div class="study_slider">
-                                            <div class="item">
-                                                <div class="s_study_icon">
-                                                    <i class="fa fa-lightbulb-o"></i>
-                                                </div>
-                                                <h4>aCCUMULATE CREATIVE IDEAS</h4>
-                                                <div class="separator3"></div>
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting let.
-                                                    Lorem Ipsum has been the industry.
-                                                    Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                    let.
-                                                    Lorem Ipsum has been the industry Printing and typelorem Ipsum has
-                                                    been the setting let.</p>
-
-                                                <a href="" class="btn btn-lg">read more</a>
-                                            </div>
-                                            <div class="item">
-                                                <div class="s_study_icon">
-                                                    <i class="fa fa-lightbulb-o"></i>
-                                                </div>
-                                                <h4>aCCUMULATE CREATIVE IDEAS</h4>
-                                                <div class="separator3"></div>
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting let.
-                                                    Lorem Ipsum has been the industry.
-                                                    Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                    let.
-                                                    Lorem Ipsum has been the industry Printing and typelorem Ipsum has
-                                                    been the setting let.</p>
-
-                                                <a href="" class="btn btn-lg">read more</a>
-                                            </div>
-                                            <div class="item">
-                                                <div class="s_study_icon">
-                                                    <i class="fa fa-lightbulb-o"></i>
-                                                </div>
-                                                <h4>aCCUMULATE CREATIVE IDEAS</h4>
-                                                <div class="separator3"></div>
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting let.
-                                                    Lorem Ipsum has been the industry.
-                                                    Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                    let.
-                                                    Lorem Ipsum has been the industry Printing and typelorem Ipsum has
-                                                    been the setting let.</p>
-
-                                                <a href="" class="btn btn-lg">read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="single_study_right_img">
-                                <div class="col-sm-6">
-                                    <div class="single_study_img">
-                                        <img src="assets/images/study.jpg" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-
-        <!-- Counter Section -->
-
-        <!-- <section id="counter" class="counter">
-            <div class="video_overlay">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="main_counter_area text-center">
-
-                                <div class="row">
-                                    <div class="single_counter border_right">
-                                        <div class="col-sm-3 col-xs-12">
-                                            <div class="single_counter_item">
-                                                <i class="icon icon-thumbs-up"></i>
-                                                <h2 class="statistic-counter">3891</h2>
-                                                <h4 class="">User Favourites</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="single_counter">
-                                        <div class="col-sm-3 col-xs-12">
-                                            <div class="single_counter_item">
-                                                <i class="icon icon-business-3"></i>
-                                                <h2 class="statistic-counter">281</h2>
-                                                <h4 class="">Posts Last 24 Hours</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="single_counter">
-                                        <div class="col-sm-3 col-xs-12">
-                                            <div class="single_counter_item">
-                                                <i class="icon icon-people-32"></i>
-                                                <h2 class="statistic-counter">618</h2>
-                                                <h4 class="">Total Posts</h4>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="single_counter">
-                                        <div class="col-sm-3 col-xs-12">
-                                            <div class="single_counter_item">
-                                                <i class="icon icon-cup"></i>
-                                                <h2 class="statistic-counter">178</h2>
-                                                <h4 class="">Amazing Features</h4>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <!-- Pricing Section -->
-
-        <!-- <section id="pricing" class="pricing">
-            <div class="container">
-                <div class="row">
-                    <div class="main_pricing_area sections">
-                        <div class="head_title text-center">
-                            <h2>OUR PRICING</h2>
-                            <div class="subtitle">
-                                A 30 days free trial for all. A brief story about how this process works, keep an eye
-                                till the end.
-                            </div>
-                            <div class="separator"></div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6">
-                            <div class="single_pricing">
-                                <div class="pricing_head">
-                                    <h3>STARTER</h3>
-                                    <div class="pricing_price">
-                                        <div class="p_r text-center">$19</div>
-                                        <div class="m_t text-center">per month</div>
-                                    </div>
-                                </div>
-
-                                <div class="pricing_body">
-                                    <ul>
-                                        <li>Competition Analysis Methods</li>
-                                        <li>All Ranked URLs</li>
-                                        <li>International Support System</li>
-                                        <li>Social Media Tracking</li>
-                                    </ul>
-                                    <a href="https://bootstrapthemes.co" class="btn btn-md">CHOOSE PLAN</a>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="col-md-4 col-sm-6">
-                            <div class="single_pricing pricing_business">
-                                <div class="pricing_head ">
-                                    <h3>PREMIUM</h3>
-                                    <div class="pricing_price">
-                                        <div class="p_r text-center">$39</div>
-                                        <div class="m_t text-center">per month</div>
-                                    </div>
-                                </div>
-
-                                <div class="pricing_body">
-                                    <ul>
-                                        <li>Competition Analysis Methods</li>
-                                        <li>All Ranked URLs</li>
-                                        <li>International Support System</li>
-                                        <li>Social Media Tracking</li>
-                                    </ul>
-                                    <a href="https://bootstrapthemes.co" class="btn btn-md">CHOOSE PLAN</a>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="col-md-4 col-sm-6">
-                            <div class="single_pricing">
-                                <div class="pricing_head">
-                                    <h3>BUSINESS</h3>
-                                    <div class="pricing_price">
-                                        <div class="p_r text-center">$99</div>
-                                        <div class="m_t text-center">per month</div>
-                                    </div>
-                                </div>
-
-                                <div class="pricing_body">
-                                    <ul>
-                                        <li>Competition Analysis Methods</li>
-                                        <li>All Ranked URLs</li>
-                                        <li>International Support System</li>
-                                        <li>Social Media Tracking</li>
-                                    </ul>
-                                    <a href="https://bootstrapthemes.co" class="btn btn-md">CHOOSE PLAN</a>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <!-- Team Section -->
-        <!-- <section id="team" class="team">
-            <div class="main_team_area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="head_title textwhite text-center margin-top-80">
-                                <h2>OUR TEAM</h2>
-                                <div class="subtitle">
-                                    Meet the craziest team. Share your thoughts with them.
-                                </div>
-                                <div class="separator"></div>
-                            </div>
-
-                            <div class="main_team">
-                                <ul>
-                                    <li>
-                                        <div class="single_team_img">
-                                            <img src="assets/images/team1.jpg" alt="" />
-                                        </div>
-                                        <div class="single_team_text">
-                                            <h4>Semf Ucuk</h4>
-                                            <p>Founder</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_team_img">
-                                            <img src="assets/images/team2.jpg" alt="" />
-                                        </div>
-                                        <div class="single_team_text">
-                                            <h4>Kazi Erfan</h4>
-                                            <p>Engineering</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_team_img">
-                                            <img src="assets/images/team3.jpg" alt="" />
-                                        </div>
-                                        <div class="single_team_text">
-                                            <h4>Jeng Koli</h4>
-                                            <p>Designer</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_team_img">
-                                            <img src="assets/images/team4.jpg" alt="" />
-                                        </div>
-                                        <div class="single_team_text">
-                                            <h4>Pet Romak</h4>
-                                            <p>Marketing</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_team_img">
-                                            <img src="assets/images/test2.jpg" alt="" />
-                                        </div>
-                                        <div class="single_team_text">
-                                            <h4>Chet Pok</h4>
-                                            <p>Web Developer</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <!-- Client Logo Section -->
-
-        <!-- <section id="clogo" class="clogo">
-            <div class="container">
-                <div class="row">
-                    <div class="main_clogo sections text-center">
-                        <div class="head_title text-center">
-                            <h2>Great Integrations with Others</h2>
-                            <div class="subtitle">
-                                Suspendisse sed eros mollis, tincidunt felis eget, interdum erat.
-                                Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit, dictum
-                                quam nec.
-                            </div>
-                            <div class="separator"></div>
-                        </div>
-
-                        <div class="col-sm-3 col-xs-6">
-                            <a href=""><img src="assets/images/clogo1.png" alt="" /></a>
-                        </div>
-                        <div class="col-sm-3 col-xs-6">
-                            <a href=""><img src="assets/images/clogo2.png" alt="" /></a>
-                        </div>
-                        <div class="col-sm-3 col-xs-6">
-                            <a href=""><img src="assets/images/clogo3.png" alt="" /></a>
-                        </div>
-                        <div class="col-sm-3 col-xs-6">
-                            <a href=""><img src="assets/images/clogo4.png" alt="" /></a>
-                        </div>
-                        <div class="col-sm-3 col-xs-6">
-                            <a href=""><img src="assets/images/clogo5.png" alt="" /></a>
-                        </div>
-                        <div class="col-sm-3 col-xs-6">
-                            <a href=""><img src="assets/images/clogo6.png" alt="" /></a>
-                        </div>
-                        <div class="col-sm-3 col-xs-6">
-                            <a href=""><img src="assets/images/clogo9.png" alt="" /></a>
-                        </div>
-                        <div class="col-sm-3 col-xs-6">
-                            <a href=""><img src="assets/images/clogo8.png" alt="" /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="divider"></div>
-        </section>
-
-
-      
-        <section id="blog" class="blog">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="main_blog sections">
-                        <div class="head_title text-center">
-                            <h2>OUR BLOG</h2>
-                            <div class="subtitle">
-                                Suspendisse sed eros mollis, tincidunt felis eget, interdum eratullam sit amet odio.
-                            </div>
-                            <div class="separator"></div>
-                        </div>
-
-                        <div class="main_blog_content">
-                            <div class="col-sm-6">
-                                <div class="single_blog_area textwhite">
-                                    <div class="row">
-                                        <div class="col-sm-6 no-padding">
-                                            <div class="single_blog_img">
-                                                <img src="assets/images/blog1.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 no-padding">
-                                            <div class="single_blog_text s_b_left">
-                                                <p>art/t-shirt</p>
-                                                <h3>T-SHIRT DESIGN</h3>
-                                                <div class="separator2"></div>
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                    industry. Lorem Ipsum has been the indu Stry's
-                                                    standard dummy text ever since the 1500s, an unknown printer took a
-                                                    galley of type
-                                                    a scrambled it to make a type specimen book.</p>
-
-                                                <a href="" class="read_more">Read More >></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <div class="single_blog_area textwhite">
-                                    <div class="row">
-                                        <div class="col-sm-6 no-padding">
-                                            <div class="single_blog_img">
-                                                <img src="assets/images/blog2.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 no-padding">
-                                            <div class="single_blog_text s_b_left">
-                                                <p>art/t-shirt</p>
-                                                <h3>T-SHIRT DESIGN</h3>
-                                                <div class="separator2"></div>
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                    industry. Lorem Ipsum has been the indu Stry's
-                                                    standard dummy text ever since the 1500s, an unknown printer took a
-                                                    galley of type
-                                                    a scrambled it to make a type specimen book.</p>
-
-                                                <a href="" class="read_more">Read More >></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="single_blog_area textwhite">
-                                    <div class="row">
-
-                                        <div class="col-sm-6 col-sm-push-6 no-padding">
-                                            <div class="single_blog_img">
-                                                <img src="assets/images/blog3.jpg" alt="" />
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-6 col-sm-pull-6 no-padding">
-                                            <div class="single_blog_text s_b_right">
-                                                <p>art/t-shirt</p>
-                                                <h3>T-SHIRT DESIGN</h3>
-                                                <div class="separator2"></div>
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                    industry. Lorem Ipsum has been the indu Stry's
-                                                    standard dummy text ever since the 1500s, an unknown printer took a
-                                                    galley of type
-                                                    a scrambled it to make a type specimen book.</p>
-
-                                                <a href="" class="read_more">Read More >></a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <div class="single_blog_area textwhite">
-                                    <div class="row">
-                                        <div class="col-sm-6 col-sm-push-6 no-padding">
-                                            <div class="single_blog_img">
-                                                <img src="assets/images/blog4.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 col-sm-pull-6 no-padding">
-                                            <div class="single_blog_text s_b_right">
-                                                <p>art/t-shirt</p>
-                                                <h3>T-SHIRT DESIGN</h3>
-                                                <div class="separator2"></div>
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                    industry. Lorem Ipsum has been the indu Stry's
-                                                    standard dummy text ever since the 1500s, an unknown printer took a
-                                                    galley of type
-                                                    a scrambled it to make a type specimen book.</p>
-
-                                                <a href="" class="read_more">Read More >></a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>End off Blog Section -->
-
-
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="contact_contant sections">
-                            <div class="head_title text-center">
-                                <h2>Nosso contato</h2>
-                                <div class="subtitle">
-                                   Caso precise entrar em contato com nosco.
-                                </div>
-                                <div class="separator"></div>
-                            </div><!-- End off Head_title -->
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="main_contact_info">
-                                        <div class="row">
-                                            <div class="contact_info_content padding-top-90 padding-bottom-60 p_l_r">
-                                                
-                                                <div class="col-sm-12">
-                                                    <div class="single_contact_info">
-                                                        <div class="single_info_text">
-                                                            <h3>Telefone</h3>
-                                                            <h4> 3251-8987</h4>
-                                                            <h4>61 988223462</h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-12">
-                                                    <div class="single_contact_info">
-                                                        <div class="single_info_text">
-                                                            <h3>EMAIL </h3>
-                                                            <h4>contactus@email.com</h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <div class="single_contant_left padding-top-90 padding-bottom-90">
-                                        <form action="#" id="formid">
-                                            <div
-                                                class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">
-
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-control" name="name"
-                                                                placeholder="Primeiro" required="">
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <div class="form-group">
-                                                            <input type="email" class="form-control" name="email"
-                                                                placeholder="Email" required="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-12">
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-control" name="subject"
-                                                                placeholder="Objetivo" required="">
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                                <div class="form-group">
-                                                    <textarea class="form-control" name="message" rows="7"
-                                                        placeholder="Mensagem"></textarea>
-                                                </div>
-
-                                                <div class="">
-                                                    <input type="submit" value="Enviar Mensagem" class="btn btn-lg">
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><!-- End of contact section -->
-
-
-
-        <!--Footer section-->
-        <section class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="main_footer">
-                            <div class="row">
-                                <div class="col-sm-6 col-xs-12">
-                                    <div class="flowus">
-                                        <a href=""><i class="fa fa-facebook"></i></a>
-                                        <a href=""><i class="fa fa-twitter"></i></a>
-                                        <a href=""><i class="fa fa-google-plus"></i></a>
-                                        <a href=""><i class="fa fa-instagram"></i></a>
-                                        <a href=""><i class="fa fa-youtube"></i></a>
-                                        <a href=""><i class="fa fa-dribbble"></i></a>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-6 col-xs-12">
-                                    <div class="copyright_text">
-                                        <p class=" wow fadeInRight" data-wow-duration="1s">Made with <i
-                                                class="fa fa-heart"></i> by <a
-                                                href="kangaroodesigner">Kangaroo Designer</a>2020. All Rights
-                                            Reserved</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><!-- End off footer Section-->
-
-
-
-
-
-
-
-
-
-
-
+   
+    <img src="images/ground.png" class="bottom-img" alt="" style="max-width:100%;
+    max-height:100px;
+   
+  ">
+  </section> -->
+
+  <section id="about">
+    <div class="container">
+      <h3 class="title text-center">HISTÓRIA</h3>
+      <br>
+      <br>
+      <h5 style="font-family: fantasy; text-align: center;">"Tudo começa em Deus, nosso Pai, com seu infinito amor e maravilhosa graça."</h5>
+      <div class="row">
+        <div class="col-md-6 about">
+          <br>
+          <br>
+          <br>
+         <p>   Antes mesmo de imaginarmos Ele já havia nos escolhido e estava nos preparando para que no seu tempo aquilo que nasceu no Seu coração fosse manifesto através deste movimento.</p>
+         <p>Cremos em um propósito que uniu os nossos corações, e todos os dias a bondade de Deus nos alcança e seu amor é derramado sobre nós.
+          E em resposta a este amor nasce então o Projeto Zoe. 
+         </p>
+         <p>Fomos chamados para levar amor e esperança e compartilhar sobre Jesus, o nosso único e perfeito caminho.</p>
+         <p>Precisamos nos lembrar do Mestre que nos chama para seguirmos as pegadas de suas sandálias.”</p>
+         <p>Quem irá? Nós iremos! 🌎❤️</p>
+         <p>O Projeto Zoe - Em Amor por Vidas, tomou forma no dia 26/04/2020 para cumprir um chamado e levar amor, alegria e esperança de dias melhores a todos aqueles que estão em situação de vulnerabilidade social em nossa comunidade, isso acontecerá através de
+          ações e doações de recursos.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="images/img1.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
     </div>
-
-    <!-- START SCROLL TO TOP  -->
-
-    <div class="scrollup">
-        <a href="#"><i class="fa fa-chevron-up"></i></a>
+  </section>
+  <!--- Services ---->
+  <section id="services" style="background-color: lightgrey;">
+    <div class="container text-center">
+      <div class="row text-center">
+        <div class="col-md-4 services">
+          <!-- <img src="svg/undraw_website_setup_5hr2.svg" class="service-img" alt=""> -->
+          <h4>Nossa missão</h4>
+          <p>Promover assistência para crianças, jovens e famílias em vulnerabilidade social.
+          </p>
+        </div>
+        <div class="col-md-4 services">
+          <!-- <img src="svg/branding.svg" class="service-img" alt=""> -->
+          <h4>Visão</h4>
+          <p>Sendo agentes de transformação em nossa comunidade através de valores e princípios cristãos e com ações de impacto social e desenvolvimento humano. 
+          </p>
+        </div>
+        <div class="col-md-4 services">
+          <!-- <img src="svg/ads.svg" class="service-img" alt=""> -->
+          <h4>Valores</h4>
+          <p>Manifestação de amor, empatia, solidariedade e compaixão.</p>
+        </div>
+      </div>
+      <!-- <button type="button" class="btn btn-primary" name="button">Pesquise mais</button> -->
     </div>
-
-    <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.min.js"></script>
-
-    <script src="assets/js/jquery.magnific-popup.js"></script>
-    <script src="assets/js/jquery.mixitup.min.js"></script>
-    <script src="assets/js/jquery.easing.1.3.js"></script>
-    <script src="assets/js/jquery.masonry.min.js"></script>
-
-    <!--slick slide js -->
-    <script src="assets/css/slick/slick.js"></script>
-    <script src="assets/css/slick/slick.min.js"></script>
-
-
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
-
+  </section>
+  <!--- About Section ------>
+  
+  <!---  Testimonials Section  --->
+  <!-- <section id="testimonials">
+    <div class="container">
+      <h3 class="title text-center">TESTIMONIALS</h3>
+      <div class="row offset-1">
+        <div class="col-md-5 testimonials">
+          <p class="feedback">"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          </p>
+          <img src="images/testimonials/testimonial-1.jpg" alt="">
+          <p class="user-details"><b>James</b><br>CEO at DIN</p>
+        </div>
+        <div class="col-md-5 testimonials">
+          <p class="feedback">"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          </p>
+          <img src="images/testimonials/testimonial-3.jpg" alt="">
+          <p class="user-details"><b>William</b><br>Co-founder at ArtSpace</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- Footer ------>
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-box">
+        </div>
+        <div class="col-md-4 footer-box">
+        </div>
+        <div class="col-md-4 footer-box">
+          
+        </div>
+        <div class="col-md-6 ">
+          <div id="social">
+            <p>Encontre-nos nas redes sociais</p>
+            <div class="social-icons">
+              <a href="#" class="svg-icons"><img src="svg/facebook-logo.svg" alt=""></a>
+              <a href="#" class="svg-icons"><img src="svg/instagram_.svg" alt=""></a>
+              <a href="#" class="svg-icons"><img src="svg/twitter-logo.svg" alt=""></a>
+              <a href="#" class="svg-icons"><img src="svg/whatsapp.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 text-right">
+          <p class="copyright">Copyright © 2019. All rights reserved | Designed by <a
+            href="">FP Design</a></p>
+        </div>
+      </div>
+      <br>
+    </div>
+  </section>
+  <!--- Smooth Scroll js ---------->
+  <script type="text/javascript" src="js/smooth-scroll.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+  <style>
+    #nav-bar {}
+  </style>
 </body>
 
 </html>
